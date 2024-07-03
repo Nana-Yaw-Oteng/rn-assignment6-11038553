@@ -23,14 +23,13 @@ Welcome to BoutiqueApp! This is a mobile application built using React Native fo
 - Redux
 - React Navigation
 
-
-![alt text](assets/shot1.jpg)
-
-![alt text](assets/shot2.jpg)
-
-![alt text](assets/shot3.jpg)
-
 ## Contributing
 
 Contributions are welcome! If you find any bugs or have suggestions for new features, please open an issue or submit a pull request.
 
+![alt text](assets/shot1.jpg)
+
+
+![alt text](assets/shot2.jpg)
+
+![alt text](assets/shot3.jpg)
