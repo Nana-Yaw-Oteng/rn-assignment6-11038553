@@ -12,7 +12,7 @@ const DrawerNavigator = () => {
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={HomeScreen} options={{headerShown:false}} />
-        <Drawer.Screen name="Cart" component={CartScreen} />
+        <Drawer.Screen name="Cart" component={CartScreen}  options={{headerShown:false}}/>
       </Drawer.Navigator>
     </NavigationContainer>
    

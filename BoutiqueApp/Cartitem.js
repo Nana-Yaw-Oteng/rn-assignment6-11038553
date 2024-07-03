@@ -1,5 +1,6 @@
 import React from 'react';
-import { View, Text, Image, Button, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 
 const CartItem = ({ item, removeFromCart }) => {
   return (
@@ -7,9 +8,10 @@ const CartItem = ({ item, removeFromCart }) => {
       <Image source={item.image} style={styles.image} />
       <View style={styles.info}>
         <Text style={styles.name}>{item.name}</Text>
+        <Text style={styles.description}>{item.description}</Text>
         <Text style={styles.price}>${item.price}</Text>
       </View>
-      <Button title="Remove" onPress={() => removeFromCart(item.id)} />
+      <Icon name='times-circle' size={30} color={'red'} onPress={() => removeFromCart(item.id)} />
     </View>
   );
 };
@@ -19,26 +21,27 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
-    borderBottomWidth: 1,
-    borderColor: '#ccc',
   },
   image: {
-    width: 50,
-    height: 50,
-    resizeMode: 'contain',
+    width: 100,
+    height: 150,
+    
   },
   info: {
     flex: 1,
     marginLeft: 10,
   },
   name: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
   },
   price: {
-    fontSize: 14,
-    color: '#888',
+    fontSize: 18,
+    color: '#ff944d',
   },
+  description:{
+    color:'#737373'
+  }
 });
 
 export default CartItem;
